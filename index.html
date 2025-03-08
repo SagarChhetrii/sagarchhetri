@@ -6,63 +6,60 @@
   <title>Sagar Chhetri</title>
 </head>
 <style>
-  body{
-    height: 1000px;
+  body {
+    min-height: 100vh;
     font-family: system-ui, sans-serif;
     background-color: black;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
   section {
-  margin-block-end: 34rem;
-  
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
   .hero {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
-    max-width: 800px;
-
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .hero img {
-  width: 100%;
-  aspect-ratio: 16 / 6;
-  height: 20%;
-  object-fit: cover;
-  mask: linear-gradient(to bottom,#000 60%, transparent);
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    mask: linear-gradient(to bottom,#000 65%, transparent);
   }
   
-
+  .content h1 {
+    color: aliceblue;
+    font-size: 40px;
+    mask: linear-gradient(to top,#000 25%, transparent);
+    margin-top: -40px;
+    text-align: center;
+  }
+  
+  p {
+    max-inline-size: min(80ch, 95%);
+    padding-inline: 3rem;
+    margin-inline: auto;
+    margin-top: 0;
+    font-size: 18px;
+    color: aliceblue;
+  }
   .content{
     text-align: center;
     max-inline-size: min(80ch, 95%);
     padding-inline: 3rem;
     margin-inline: auto;
-  }
-  p{
-    max-inline-size: min(80ch, 95%);
-    padding-inline: 3rem;
-    margin-inline: auto;
-    margin-top: -14px;
-    font-size: 18px;
-    color: aliceblue;
-    
-
-  }
-  .content h1{
-    color: aliceblue;
-    font-size: 40px;
-    mask: linear-gradient(to top,#000 35%, transparent);
-    margin-top:-6%;
-    text-align: center;
-    
-
   }
   .button{
       margin:4% 0 0 2%;
